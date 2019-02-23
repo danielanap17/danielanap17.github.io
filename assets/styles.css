@@ -1,12 +1,92 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+/* RESOURCES
+ * colour picker: https://htmlcolorcodes.com/
+ */
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+header {
     text-align: center;
 }
 
-h1 {
-    font-style: italic;    
+footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 10pt;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.5);
 }
 
-p {
-    
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url(/assets/photos/326792-P9JGFL-528.jpg) no-repeat white;
+    background-size: cover;
+    min-height: 150px;
 }
+
+h1 {
+    font-size: 4em;
+}
+
+/* h2 tags serve as landmarks for screen readers
+ * but are never shown on screen
+ */
+h2 {
+    font-size: 1pt;
+    visibility: hidden; 
+}
+
+h3 {
+    font-size: 2em;
+}
+
+#welcome {
+    text-align: center;
+}
+
+#content {
+    max-width: 75%;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    font-style: italic;
+}
+
+a:link{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.nav-button:link {
+    text-transform: uppercase;
+    font-size: 14pt; 
+} 
+
+#nav-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-item {
+    flex: 0 0 calc(20% - 20px);
+    max-width: 50%;
+}
+
+
+

@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+header a:link{
+    text-decoration: none;
+}
+
 header {
     text-align: center;
 }
@@ -14,7 +18,7 @@ header {
 header h1 {
     font-family: 'Dawning of a New Day', cursive;
     font-size: 600%;
-    margin: -12px;
+    margin: -12px;   
 }
 
 footer {
@@ -206,7 +210,7 @@ a.nav-button:active{
 
 /***MOBILE RELATED STYLING***/
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 800px) {
     
     header h1 {
         font-size: 18vw;
@@ -219,7 +223,6 @@ a.nav-button:active{
     #content {
         height: 90vh;
     }
-    
     
 
 }

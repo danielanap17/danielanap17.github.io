@@ -130,6 +130,11 @@ a.nav-button:link {
     background: rgba(77, 208, 225);
 }
 
+#spotlight img {
+    width: 40%;
+    
+}
+
 #spotlight .left a:hover{
     display: block;
     background: rgba(38, 198, 218)

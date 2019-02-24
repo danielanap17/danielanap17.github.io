@@ -12,6 +12,7 @@ header {
 }
 
 header h1 {
+    font-family: 'Times New Roman', Times, serif;
     padding-top: 1%;
     padding-bottom: 1%;
 }
@@ -27,7 +28,7 @@ footer {
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
     text-align: center;
     background: url(/assets/photos/326792-P9JGFL-528.jpg) no-repeat white;
     background-size: cover;
@@ -54,9 +55,12 @@ h4 {
     font-size: 1em;
 }
 
-#intro {
-    font-style: italic;
-    text-align: center;
+a:link {
+    color: black;
+}
+
+a:visited{
+    color: black;
 }
 
 #content {
@@ -69,21 +73,6 @@ h4 {
     border-radius: 22px;
 }
 
-a.nav-button:visited{
-    color: black;
-}
-
-a.nav-button:hover{
-    color: black;
-    font-weight: bold;
-}
-
-a.nav-button:link {
-    color: black;
-    font-size: 14pt; 
-    text-decoration: none;
-} 
-
 #nav-container {
     display: -webkit-box;
     display: -moz-box;
@@ -92,6 +81,7 @@ a.nav-button:link {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 2%;
 }
 
 .nav-item {
@@ -99,10 +89,55 @@ a.nav-button:link {
     max-width: 50%;
 }
 
+a.nav-button:link {
+    color: black;
+    font-size: 14pt; 
+    text-decoration: none;
+} 
+
+a.nav-button:visited{
+    color: black;
+}
+
+a.nav-button:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+a.nav-button:active{
+    color: black;
+    text-decoration: underline;
+}
+
+#notice {
+    font-size: 10pt;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: yellow;
+    width: 100%;
+    padding: 1%;
+}
+
+#intro {
+    text-align: center;
+    font-style: italic;
+}
+
+#intro h3 {
+    font-style: italic;
+}
+
+
 #spotlight {
     padding-top: 2%;
     display: flex;
     max-width: 75%;
+}
+
+#spotlight img {
+    width: 40%;
 }
 
 #spotlight a:link{
@@ -130,14 +165,19 @@ a.nav-button:link {
     background: rgba(77, 208, 225);
 }
 
-#spotlight img {
-    width: 40%;
-    
-}
-
 #spotlight .left a:hover{
     display: block;
     background: rgba(38, 198, 218)
+}
+
+#spotlight .middle a:link {
+    display: block;
+    background: rgba(38, 166, 154);
+}
+
+#spotlight .middle a:hover {
+    display: block;
+    background: rgba(0, 150, 136)
 }
 
 #spotlight .right a:link {
@@ -147,7 +187,7 @@ a.nav-button:link {
 
 #spotlight .right a:hover {
     display: block;
-    background: rgba(76, 175, 80)
+    background: rgba(76, 175, 80);
 }
 
 /* Clear floats after the columns */
@@ -155,6 +195,14 @@ a.nav-button:link {
     content: "";
     display: table;
     clear: both;
+}
+
+#nav-sep {
+    position: relative;
+    left: 15%;
+    width: 70%;
+    padding-top: 0.3%;
+    background: rgba(77, 208, 225, 0.3)
 }
 
 

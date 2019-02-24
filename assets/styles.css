@@ -135,7 +135,10 @@ a.nav-button:active{
 }
 
 #intro {
+    position: relative;
+    left: 30%;
     text-align: center;
+    max-width: 50%;
 }
 
 #intro h3 {
@@ -204,8 +207,14 @@ a.nav-button:active{
 
 @media only screen and (max-width: 1366px) {
     
-    * {
+    body {
         font-size: 4.5vw;
+        background: lightblue;
+        height: 100vh;
+    }
+
+    #content {
+        height: 90vh;
     }
     
     header h1 {

@@ -163,31 +163,49 @@ a.nav-button:active{
 #spotlight .left a:link {
     display: block;
     background: rgba(77, 208, 225);
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 #spotlight .left a:hover{
     display: block;
-    background: rgba(38, 198, 218)
+    background: rgba(38, 198, 218);
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 #spotlight .middle a:link {
     display: block;
     background: rgba(38, 166, 154);
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 #spotlight .middle a:hover {
     display: block;
-    background: rgba(0, 150, 136)
+    background: rgba(0, 150, 136);
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 #spotlight .right a:link {
     display: block;
     background: rgba(102, 187, 106);
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 #spotlight .right a:hover {
     display: block;
     background: rgba(76, 175, 80);
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 /* Clear floats after the columns */

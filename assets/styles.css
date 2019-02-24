@@ -27,6 +27,12 @@ footer {
     text-align: left;
 }
 
+@media only screen max-width(600px) {
+    body {
+        font-size: 3vw;
+    }
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;

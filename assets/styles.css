@@ -11,12 +11,18 @@ header {
     text-align: center;
 }
 
+header h1 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
 footer {
     position: fixed;
     bottom: 0;
-    font-size: 10pt;
+    padding-top: 10px;
+    top: 95%;
+    font-size: 8pt;
     text-align: left;
-    background: rgba(255, 255, 255, 0.5);
 }
 
 body {
@@ -32,7 +38,7 @@ h1 {
     font-size: 4em;
 }
 
-/* h2 tags serve as landmarks for screen readers
+/* H2 tags serve as landmarks for screen readers
  * but are never shown on screen
  */
 h2 {
@@ -44,33 +50,38 @@ h3 {
     font-size: 2em;
 }
 
-#welcome {
+h4 {
+    font-size: 1em;
+}
+
+#intro {
+    font-style: italic;
     text-align: center;
 }
 
 #content {
-    max-width: 75%;
+    position: relative;
+    left: 5%;
+    padding-bottom: 5%;
+    max-width: 90%;
     text-align: left;
     background: rgba(255, 255, 255, 0.8);
+    border-radius: 22px;
 }
 
-a:visited{
+a.nav-button:visited{
     color: black;
 }
 
-a:hover{
-    font-style: italic;
-}
-
-a:link{
+a.nav-button:hover{
     color: black;
     font-weight: bold;
-    text-decoration: none;
 }
 
 a.nav-button:link {
-    text-transform: uppercase;
+    color: black;
     font-size: 14pt; 
+    text-decoration: none;
 } 
 
 #nav-container {
@@ -86,6 +97,59 @@ a.nav-button:link {
 .nav-item {
     flex: 0 0 calc(20% - 20px);
     max-width: 50%;
+}
+
+#spotlight {
+    padding-top: 2%;
+    display: flex;
+    max-width: 75%;
+}
+
+#spotlight a:link{
+    padding: 15%;
+    text-decoration: none;
+    transition: color 0.3s linear;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+}
+
+#spotlight a:hover {
+    background-color: white;
+}
+
+#spotlight .column {
+    text-align: center;
+    position: relative;
+    left: 15%;
+    flex: 50%;
+    min-height: 100px;
+}
+
+#spotlight .left a:link {
+    display: block;
+    background: rgba(77, 208, 225);
+}
+
+#spotlight .left a:hover{
+    display: block;
+    background: rgba(38, 198, 218)
+}
+
+#spotlight .right a:link {
+    display: block;
+    background: rgba(102, 187, 106);
+}
+
+#spotlight .right a:hover {
+    display: block;
+    background: rgba(76, 175, 80)
+}
+
+/* Clear floats after the columns */
+#spotlight:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 

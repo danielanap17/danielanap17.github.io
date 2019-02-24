@@ -27,9 +27,9 @@ footer {
     text-align: left;
 }
 
-@media only screen max-width(600px) {
+@media only screen and (max-width: 600px) {
     body {
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
 }
 

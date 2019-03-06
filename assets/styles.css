@@ -36,30 +36,35 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-image: url(/assets/photos/326792-P9JGFL-528.jpg);
-    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: block;
+    height: 100vh;
 }
 
 h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 4em;
+    text-transform: lowercase;
 }
 
-/* H2 tags serve as landmarks for screen readers
- * but are never shown on screen
- */
 h2 {
-    font-size: 1pt;
-    visibility: hidden; 
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    text-transform: lowercase;
 }
 
 h3 {
+    font-family: 'Playfair Display', serif;
     font-size: 2em;
+    text-transform: lowercase;
 }
 
 h4 {
+    font-family: 'Playfair Display', serif;
     font-size: 1em;
+    text-transform: lowercase;
 }
 
 hr {
@@ -81,12 +86,13 @@ a:visited{
 #content {
     position: relative;
     left: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 12%;
+    min-height: 90vh;
     max-width: 90%;
-    height: 90vh;
     text-align: left;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 22px;
+    display: block;
 }
 
 #nav-container {
@@ -201,6 +207,7 @@ a.nav-button:active{
     background: rgba(76, 175, 80);
 }
 
+
 /* Clear floats after the columns */
 #spotlight:after {
     content: "";
@@ -208,8 +215,45 @@ a.nav-button:active{
     clear: both;
 }
 
-/***MOBILE RELATED STYLING***/
+#thanks {
+    position: relative;
+    left: 30%;
+}
 
+.emailTemplate {
+    position: relative;
+    padding-left: 10%;
+}
+
+.emailTemplate .intro {
+    text-align: center;
+}
+
+form {
+    overflow: auto;
+}
+
+form select {
+    width: 24.3%;
+}
+
+form h3 {
+    display: inline-block;
+    padding: 2%;
+}
+
+form button {
+    background: white;
+    border: 1px, solid, black;
+    width: 100px;
+}
+
+form input {
+
+}
+
+
+/***MOBILE RELATED STYLING***/
 @media only screen and (max-width: 900px) {
     
     header h1 {
@@ -239,7 +283,6 @@ a.nav-button:active{
         left: 5%;
         max-width: 80%;
     }
-
 }
 
 

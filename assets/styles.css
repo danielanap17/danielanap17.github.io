@@ -15,10 +15,13 @@ header {
     text-align: center;
 }
 
-header h1 {
+header h1 {    
+    position: relative;
+    left: 5%;
+    text-align: center;
+    display: inline-block;
     font-family: 'Dawning of a New Day', cursive;
-    font-size: 8vw;
-    margin: -22px;   
+    font-size: 8vw;  
 }
 
 footer {
@@ -87,7 +90,6 @@ a:visited{
     position: relative;
     left: 5%;
     padding-bottom: 12%;
-    min-height: 90vh;
     max-width: 90%;
     text-align: left;
     background: rgba(255, 255, 255, 0.7);
@@ -180,7 +182,7 @@ a.nav-button:active{
     position: relative;
     left: 15%;
     flex: 50%;
-    min-height: 100px;
+    
 }
 
 #spotlight .left a:link {
